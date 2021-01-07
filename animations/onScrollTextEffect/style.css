@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.intro-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.intro-appear {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.5s all ease-in-out;
+}
+
+header > img {
+  width: 100%;
+}
+
+.intro-title {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 5%;
+}
+
+.intro-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.intro-text {
+  grid-column: 1/2;
+  width: 100%;
+  text-align: left;
+  padding: 10%;
+}
+
+.intro-text > h2 {
+  padding-bottom: 5%;
+}
+
+.intro-content > img {
+  grid-column: 2/3;
+  width: 100%;
+  padding: 10%;
+}
