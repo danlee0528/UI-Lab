@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet">
+    <title>Copy To Clipboard</title>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <p>Click on the button to copy the text from the text field. Try to paste the text (e.g. ctrl+v) afterwards in a different window, to see the effect.</p>
+
+    <input type="text" value="Hello World" id="myInput">
+    
+    <div class="tooltip">
+        <button onclick="myFunction()" onmouseover="onHover()">
+        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+        Copy text
+        </button>
+    </div>
+  </body>
+</html>
